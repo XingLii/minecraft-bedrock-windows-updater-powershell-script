@@ -1,15 +1,15 @@
 # minecraft-bedrock-windows-updater-powershell-script
- PS Script for Updating a Bedrock Server
+##PS Script for Updating a Bedrock Server
 
 
 
-How it works:
+###How it works:
 
 1. Create a folder
 2. Create in this folder a PS1 File with this Script Code in it. 
 3. Run this script
-    3.1 It will automaticly check if its will be the first run and download the latest version
-    3.2 It will create a Log file to check whats going on
+> 3.1 It will automaticly check if its will be the first run and download the latest version
+> 3.2 It will create a Log file to check whats going on
 4. Create a Windows Task to run it how often you like to
 5. Each time the script will run, it will check what version is online + what version is on your Windows (version.txt check)
 6. If the Version matches, nothing will be updated, it will check only, if the server is running, if not, it will start it.
