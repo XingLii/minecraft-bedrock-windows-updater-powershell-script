@@ -1,9 +1,9 @@
 # minecraft-bedrock-windows-updater-powershell-script
-##PS Script for Updating a Bedrock Server
+## PS Script for Updating a Bedrock Server
 
 
 
-###How it works:
+### How it works:
 
 1. Create a folder
 2. Create in this folder a PS1 File with this Script Code in it. 
