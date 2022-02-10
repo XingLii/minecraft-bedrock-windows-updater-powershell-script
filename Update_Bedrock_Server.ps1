@@ -136,8 +136,13 @@ else {
     Copy-Item "$backup_folder/permissions.json" -Destination $new_destination -Force
     Write-Verbose -Message "Copying server properties file into new server"
     Copy-Item "$backup_folder/server.properties" -Destination $new_destination -Force
-    Write-Verbose -Message "Copying whitelist file into new server"
-    Copy-Item "$backup_folder/whitelist.json" -Destination $new_destination -Force
+    Write-Verbose -Message "Copying allowlist file into new server"
+    Copy-Item "$backup_folder/allowlist.json" -Destination $new_destination -Force
+    
+    # Will be not used after 1.18.11.01 - please migrate to new allowlist.json
+    #Write-Verbose -Message "Copying whitelist file into new server"
+    #Copy-Item "$backup_folder/whitelist.json" -Destination $new_destination -Force
+    
     Write-Verbose -Message "Copying Resource Packs"
     Copy-Item "$backup_folder/resource_packs" -Destination $new_destination -Recurse -Force
 
